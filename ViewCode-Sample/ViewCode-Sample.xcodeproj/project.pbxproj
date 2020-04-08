@@ -12,6 +12,7 @@
 		84C0936F243D67790063DF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0936E243D67790063DF73 /* ViewController.swift */; };
 		84C09374243D677A0063DF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C09373243D677A0063DF73 /* Assets.xcassets */; };
 		84C09377243D677A0063DF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C09375243D677A0063DF73 /* LaunchScreen.storyboard */; };
+		84C09380243E93CB0063DF73 /* ViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0937F243E93CB0063DF73 /* ViewControllerScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		84C09373243D677A0063DF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C09376243D677A0063DF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C09378243D677A0063DF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C0937F243E93CB0063DF73 /* ViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				84C09373243D677A0063DF73 /* Assets.xcassets */,
 				84C09375243D677A0063DF73 /* LaunchScreen.storyboard */,
 				84C09378243D677A0063DF73 /* Info.plist */,
+				84C0937F243E93CB0063DF73 /* ViewControllerScreen.swift */,
 			);
 			path = "ViewCode-Sample";
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C09380243E93CB0063DF73 /* ViewControllerScreen.swift in Sources */,
 				84C0936F243D67790063DF73 /* ViewController.swift in Sources */,
 				84C0936B243D67790063DF73 /* AppDelegate.swift in Sources */,
 				84C0936D243D67790063DF73 /* SceneDelegate.swift in Sources */,
