@@ -8,25 +8,19 @@
 
 import UIKit
 
-protocol CodeView {
-    func buildViewHierarchy()
-    func setupConstraints()
-    func setupAdditionalConfigurarion()
-    func setupView()
-}
-
-extension CodeView {
-    func setupView() {
-        buildViewHierarchy()
-        setupConstraints()
-        setupAdditionalConfigurarion()
-    }
-}
-
 final class ViewControllerScreen: UIView {
+    
+    lazy var button: UIButton = {
+        let view = UIButton(frame: .zero)
+        view.backgroundColor = .red
+        view.setTitle("Fetch", for: .normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -35,18 +29,21 @@ final class ViewControllerScreen: UIView {
     
 }
 
-extension ViewController: CodeView {
+extension ViewControllerScreen: CodeView {
     
     func buildViewHierarchy() {
-        
+        addSubview(button)
     }
     
     func setupConstraints() {
-        
+        button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
+        button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15).isActive = true
+        button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -25).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     func setupAdditionalConfigurarion() {
-        
+        backgroundColor = .darkGray
     }
     
 }
