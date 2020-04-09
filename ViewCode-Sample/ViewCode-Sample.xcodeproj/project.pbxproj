@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8455702A243E9DAC0069BBA3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84557029243E9DAC0069BBA3 /* SnapKit.framework */; };
 		8455702B243E9DAC0069BBA3 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84557029243E9DAC0069BBA3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8455702F243EA1860069BBA3 /* GridBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455702E243EA1860069BBA3 /* GridBoxView.swift */; };
+		84557032243EC3820069BBA3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84557030243EC3820069BBA3 /* Quick.framework */; };
+		84557033243EC3820069BBA3 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84557030243EC3820069BBA3 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84557034243EC3820069BBA3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84557031243EC3820069BBA3 /* Nimble.framework */; };
+		84557035243EC3820069BBA3 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84557031243EC3820069BBA3 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84C0936B243D67790063DF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0936A243D67790063DF73 /* AppDelegate.swift */; };
 		84C0936D243D67790063DF73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0936C243D67790063DF73 /* SceneDelegate.swift */; };
 		84C0936F243D67790063DF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0936E243D67790063DF73 /* ViewController.swift */; };
@@ -25,6 +30,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				84557035243EC3820069BBA3 /* Nimble.framework in Embed Frameworks */,
+				84557033243EC3820069BBA3 /* Quick.framework in Embed Frameworks */,
 				8455702B243E9DAC0069BBA3 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -34,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		84557029243E9DAC0069BBA3 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		8455702E243EA1860069BBA3 /* GridBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBoxView.swift; sourceTree = "<group>"; };
+		84557030243EC3820069BBA3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		84557031243EC3820069BBA3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		84C09367243D67790063DF73 /* ViewCode-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewCode-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C0936A243D67790063DF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C0936C243D67790063DF73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84557034243EC3820069BBA3 /* Nimble.framework in Frameworks */,
+				84557032243EC3820069BBA3 /* Quick.framework in Frameworks */,
 				8455702A243E9DAC0069BBA3 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +72,8 @@
 		84557028243E9DAB0069BBA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84557031243EC3820069BBA3 /* Nimble.framework */,
+				84557030243EC3820069BBA3 /* Quick.framework */,
 				84557029243E9DAC0069BBA3 /* SnapKit.framework */,
 			);
 			name = Frameworks;
@@ -93,6 +107,7 @@
 				84C09378243D677A0063DF73 /* Info.plist */,
 				84C0937F243E93CB0063DF73 /* ViewControllerScreen.swift */,
 				84C09381243E98FD0063DF73 /* CodeView.swift */,
+				8455702E243EA1860069BBA3 /* GridBoxView.swift */,
 			);
 			path = "ViewCode-Sample";
 			sourceTree = "<group>";
@@ -174,6 +189,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -190,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8455702F243EA1860069BBA3 /* GridBoxView.swift in Sources */,
 				84C09380243E93CB0063DF73 /* ViewControllerScreen.swift in Sources */,
 				84C0936F243D67790063DF73 /* ViewController.swift in Sources */,
 				84C0936B243D67790063DF73 /* AppDelegate.swift in Sources */,
