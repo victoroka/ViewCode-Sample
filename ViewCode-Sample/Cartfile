@@ -1,3 +1,5 @@
 github "SnapKit/SnapKit" ~> 5.0.0
 github "Quick/Quick"
 github "Quick/Nimble"
+github "uber/ios-snapshot-test-case" "6.0.0"
+github "ashfurrow/Nimble-Snapshots"
