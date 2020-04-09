@@ -19,7 +19,7 @@ class GridBoxViewSpec: QuickSpec {
             it("should have the expected look and feel") {
                 let frame = CGRect(x: 0, y: 0, width: 250, height: 300)
                 let view = GridBoxView(frame: frame)
-                expect(view) == recordSnapshot("GridBoxView")
+                expect(view) == snapshot("GridBoxView")
             }
         }
     }
