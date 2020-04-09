@@ -24,6 +24,7 @@
 		84C09382243E98FD0063DF73 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C09381243E98FD0063DF73 /* CodeView.swift */; };
 		84F03006243F693800CB689F /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F03004243F693800CB689F /* FBSnapshotTestCase.framework */; };
 		84F03007243F693800CB689F /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F03005243F693800CB689F /* Nimble_Snapshots.framework */; };
+		84F03009243F6D8A00CB689F /* ViewControllerScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F03008243F6D8A00CB689F /* ViewControllerScreenSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		84C09381243E98FD0063DF73 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		84F03004243F693800CB689F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		84F03005243F693800CB689F /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
+		84F03008243F6D8A00CB689F /* ViewControllerScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScreenSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				8455703E243EC5560069BBA3 /* Info.plist */,
 				84557044243EC5870069BBA3 /* GridBoxViewSpec.swift */,
+				84F03008243F6D8A00CB689F /* ViewControllerScreenSpec.swift */,
 			);
 			path = "ViewCode-SampleTests";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84557045243EC5870069BBA3 /* GridBoxViewSpec.swift in Sources */,
+				84F03009243F6D8A00CB689F /* ViewControllerScreenSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
