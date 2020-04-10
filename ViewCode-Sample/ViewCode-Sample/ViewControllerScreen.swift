@@ -10,13 +10,6 @@ import UIKit
 
 final class ViewControllerScreen: UIView {
     
-    lazy var button: UIButton = {
-        let view = UIButton(frame: .zero)
-        view.backgroundColor = .red
-        view.setTitle("Fetch", for: .normal)
-        return view
-    }()
-    
     private lazy var gridContainer: UIStackView = {
         let view = UIStackView(frame: .zero)
         view.axis = .horizontal
@@ -25,6 +18,15 @@ final class ViewControllerScreen: UIView {
         return view
     }()
     
+    private lazy var button: UIButton = {
+        let view = UIButton(frame: .zero)
+        view.backgroundColor = .red
+        view.setTitle("Fetch", for: .normal)
+        view.layer.cornerRadius = 5
+        return view
+    }()
+    
+    let detailBox = GridDetailView()
     let leftBox = GridBoxView()
     let rightBox = GridBoxView()
     
@@ -42,13 +44,22 @@ final class ViewControllerScreen: UIView {
 extension ViewControllerScreen: CodeView {
     
     func buildViewHierarchy() {
-        addSubview(button)
+        addSubview(detailBox)
         gridContainer.addArrangedSubview(leftBox)
         gridContainer.addArrangedSubview(rightBox)
         addSubview(gridContainer)
+        addSubview(button)
     }
     
     func setupConstraints() {
+        
+        detailBox.snp.makeConstraints { (make) in
+            make.top.equalTo(safeAreaLayoutGuide.snp.topMargin).inset(50)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().inset(20)
+            make.height.equalTo(150)
+            make.centerX.equalToSuperview()
+        }
         
         gridContainer.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(20)

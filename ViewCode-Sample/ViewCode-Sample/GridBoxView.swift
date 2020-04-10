@@ -68,8 +68,6 @@ extension GridBoxView: CodeView {
         }
     }
     
-    func setupAdditionalConfigurarion() {
-        
-    }
+    func setupAdditionalConfigurarion() {}
     
 }
